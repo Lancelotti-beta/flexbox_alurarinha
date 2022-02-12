@@ -9,6 +9,34 @@
   display: flex;
 }
 
-.conteudoPrincipal .container{
+.rodapePrincipal-patrocinadores .container{
+  display: flex;
+  justify-content: space-between;
+}
 
+.rodapePrincipal-patrocinadores-list{
+  display: flex;
+  justify-content:space-around;
+
+  width: 70%;
+  margin-right: 5%;
+  align-items: center;
+}
+
+.rodapePrincipal-contatoForm{
+  width: 20%;
+  margin-left: 5%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+  display: flex;
+}
+
+.rodapePrincipal-navMap-list{
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  height: 255px;
 }
