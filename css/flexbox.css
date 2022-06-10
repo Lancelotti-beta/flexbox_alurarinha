@@ -19,6 +19,31 @@
   width: 22.5%;
 }
 
+/* ========== Sobre ========== */
+.videoSobre .container {
+  display: flex;
+  text-align: center;
+}
+
+.videoSobre-video {
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+
+.videoSobre-sobre{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 1;
+}
+
+.videoSobre-button {
+  width: 100%;
+}
+
 /* ========== Lista de Cursos ========== */
 .rodapePrincipal-contatoForm-fieldset {
   display: flex;
@@ -54,28 +79,27 @@
 }
 
 
-
-/* .videoSobre .container {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
-.videoSobre-sobre{
-  width: 50%;
-
-  justify-content: space-around;
-  align-items: center;
-}
-
-.videoSobre-button {
-  width: 100%;
-
-  margin-top: 15%;
-} */
-
-
 /* mobile */
+@media screen and (max-width: 992px) {
+  /* ========== Cursos ========== */
+  .conteudoPrincipal-cursos-link {
+    width: 31.1%;
+  }
+
+  /* ========== Lista de Cursos ========== */
+  .rodapePrincipal-navMap-list {
+    font-size: 95%;
+    
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+
+  /* ========== Patrocínadores ========== */
+  .rodapePrincipal-contatoForm {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* ========== Menu ========== */
   .cabecalhoPrincipal .container {
@@ -88,6 +112,10 @@
     flex-direction: column;
   }
 
+  .cabecalhoPrincipal-nav-link-app {
+    order: -1;
+  }
+
   /* ========== Cursos ========== */
   .conteudoPrincipal-cursos {
     flex-direction: column;
@@ -95,6 +123,15 @@
   
   .conteudoPrincipal-cursos-link {
     width: 100%;
+  }
+
+  /* ========== Sobre ========== */
+  .videoSobre .container {
+    flex-direction: column;
+  }
+
+  .videoSobre-video {
+    margin: 0 auto;
   }
 
   /* ========== Lista de Cursos ========== */
@@ -123,3 +160,4 @@
     justify-content: center;
   }
 }
+
