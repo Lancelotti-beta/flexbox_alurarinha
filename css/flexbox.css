@@ -1,3 +1,4 @@
+/* ========== Menu de navegação ========== */
 .cabecalhoPrincipal .container {
   display: flex;
   align-items: center;
@@ -8,6 +9,31 @@
   display: flex;
 }
 
+/* ========== Cursos ========== */
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+  width: 22.5%;
+}
+
+/* ========== Lista de Cursos ========== */
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  height: 255px;
+}
+
+/* ========== Patrocínadores ========== */
 .rodapePrincipal-patrocinadores .container {
   display: flex;
   justify-content: space-between;
@@ -27,29 +53,9 @@
   margin-left: 5%;
 }
 
-.rodapePrincipal-contatoForm-fieldset {
-  display: flex;
-}
 
-.rodapePrincipal-navMap-list {
-  display: flex;
 
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  height: 255px;
-}
-
-.conteudoPrincipal-cursos {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.conteudoPrincipal-cursos-link {
-  width: 22.5%;
-}
-
-.videoSobre .container {
+/* .videoSobre .container {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -66,15 +72,54 @@
   width: 100%;
 
   margin-top: 15%;
-}
+} */
 
 
 /* mobile */
-@media screen and () {
+@media screen and (max-width: 768px) {
+  /* ========== Menu ========== */
   .cabecalhoPrincipal .container {
     flex-direction: column;
     align-items: initial;
     text-align: center;
   }
 
+  .cabecalhoPrincipal-nav {
+    flex-direction: column;
+  }
+
+  /* ========== Cursos ========== */
+  .conteudoPrincipal-cursos {
+    flex-direction: column;
+  }
+  
+  .conteudoPrincipal-cursos-link {
+    width: 100%;
+  }
+
+  /* ========== Lista de Cursos ========== */
+  .rodapePrincipal-navMap-list {
+    height: auto;
+  }
+
+  /* ========== Patrocínadores ========== */
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+  }
+  
+  .rodapePrincipal-patrocinadores-list {
+    width: 100%;
+  }
+  
+  .rodapePrincipal-contatoForm {
+    width: 100%;
+
+    margin: 20px 0;
+
+    text-align: center;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+  }
 }
